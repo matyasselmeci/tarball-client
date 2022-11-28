@@ -4,7 +4,6 @@
 # Packages may be separated by newline or whitespace.  Actual whitespace must
 # be quoted.
 @core
-python36
 setroubleshoot-server
 setroubleshoot-plugins
 sudo
