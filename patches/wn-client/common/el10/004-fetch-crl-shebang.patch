@@ -1,0 +1,8 @@
+--- /usr/bin/fetch-crl	2026-01-13 13:05:33.208050871 -0600
++++ /usr/bin/fetch-crl	2026-01-13 13:05:49.660045928 -0600
+@@ -1,4 +1,4 @@
+-#! /usr/bin/perl -w
++#! /usr/bin/env perl
+ #
+ # @(#)$Id$
+ # build version 3.0.23, release 1
