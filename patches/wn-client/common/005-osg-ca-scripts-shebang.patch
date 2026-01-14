@@ -1,0 +1,55 @@
+diff -NarU5 '--exclude=.svn' '--exclude=CVS' '--exclude=.git' '--exclude=_darcs' '--exclude=.hg' osg-wn-client.orig/usr/bin/osg-ca-certs-status osg-wn-client/usr/bin/osg-ca-certs-status
+--- osg-wn-client.orig/usr/bin/osg-ca-certs-status	2025-09-08 15:41:29.000000000 +0000
++++ osg-wn-client/usr/bin/osg-ca-certs-status	2026-01-13 23:41:01.270650590 +0000
+@@ -1,6 +1,6 @@
+-#!/usr/bin/perl
++#!/usr/bin/env perl
+ use strict;
+ use warnings;
+ use File::Basename;
+ use Getopt::Long;
+ use OSGCerts;
+diff -NarU5 '--exclude=.svn' '--exclude=CVS' '--exclude=.git' '--exclude=_darcs' '--exclude=.hg' osg-wn-client.orig/usr/libexec/osg-setup-ca-certificates osg-wn-client/usr/libexec/osg-setup-ca-certificates
+--- osg-wn-client.orig/usr/libexec/osg-setup-ca-certificates	2025-09-08 15:41:29.000000000 +0000
++++ osg-wn-client/usr/libexec/osg-setup-ca-certificates	2026-01-13 23:40:26.082664528 +0000
+@@ -1,6 +1,6 @@
+-#!/usr/bin/perl
++#!/usr/bin/env perl
+ 
+ # This script sets up the certificates area so that osg-update-certs can be run a first time.  
+ # Then it calls osg-update-certs which will install the certificates.
+ 
+ use strict;
+diff -NarU5 '--exclude=.svn' '--exclude=CVS' '--exclude=.git' '--exclude=_darcs' '--exclude=.hg' osg-wn-client.orig/usr/libexec/osg-system-profiler/gratia-pbs-lsf-config-check osg-wn-client/usr/libexec/osg-system-profiler/gratia-pbs-lsf-config-check
+--- osg-wn-client.orig/usr/libexec/osg-system-profiler/gratia-pbs-lsf-config-check	2023-10-27 21:43:46.000000000 +0000
++++ osg-wn-client/usr/libexec/osg-system-profiler/gratia-pbs-lsf-config-check	2026-01-13 23:40:38.634660358 +0000
+@@ -1,6 +1,6 @@
+-#!/usr/bin/perl
++#!/usr/bin/env perl
+ 
+ use warnings;
+ use strict;
+ 
+ use Date::Manip;
+diff -NarU5 '--exclude=.svn' '--exclude=CVS' '--exclude=.git' '--exclude=_darcs' '--exclude=.hg' osg-wn-client.orig/usr/sbin/osg-ca-manage osg-wn-client/usr/sbin/osg-ca-manage
+--- osg-wn-client.orig/usr/sbin/osg-ca-manage	2025-09-08 15:41:29.000000000 +0000
++++ osg-wn-client/usr/sbin/osg-ca-manage	2026-01-13 23:41:44.490635733 +0000
+@@ -1,6 +1,6 @@
+-#!/usr/bin/perl
++#!/usr/bin/env perl
+ 
+ =head1 NAME
+ 
+ osg-ca-manage - Manage the OSG CA certificate installation
+ 
+diff -NarU5 '--exclude=.svn' '--exclude=CVS' '--exclude=.git' '--exclude=_darcs' '--exclude=.hg' osg-wn-client.orig/usr/sbin/osg-update-certs osg-wn-client/usr/sbin/osg-update-certs
+--- osg-wn-client.orig/usr/sbin/osg-update-certs	2025-09-08 15:41:29.000000000 +0000
++++ osg-wn-client/usr/sbin/osg-update-certs	2026-01-13 23:41:56.890630991 +0000
+@@ -1,6 +1,6 @@
+-#!/usr/bin/perl
++#!/usr/bin/env perl
+ 
+ =head1 NAME
+ 
+ osg-update-certs - Update the OSG CA certificate installation
+ 
